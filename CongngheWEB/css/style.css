@@ -1,0 +1,52 @@
+*{
+    font-family: Roboto;
+}
+/*=========Header==========*/
+
+header{
+    background: linear-gradient(white,#0073e6);
+    height: 70px;
+}
+.logo img{
+    width: 400px;
+}
+.header-right{
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+.header-right a{
+    color:#000;
+    text-decoration: none;
+}
+.header-right a:hover{
+    color: white;
+    cursor: pointer;
+}
+/*==============MAin==========*/
+main{
+    margin-top: 10px;
+}
+.content{
+    border-bottom:1px dotted ;
+    padding-bottom : 10px;
+    padding-top: 10px;
+}
+.btn{
+    text-align:center;
+    margin-left:70%;
+}
+/*============Footer===========*/
+footer{
+    background-color: #0073e6;
+    padding: 8px 0 1px 0;
+    color: white;
+}
+.f-left{
+    font-size: 12px;
+    padding-top: 50px;
+}
+.f-right{
+    font-size: 13px;
+    padding-left: 90px;
+}
