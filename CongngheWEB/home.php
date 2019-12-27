@@ -10,23 +10,8 @@
     <title>Trang chủ</title>
 </head>
 <body>
-    <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3 header-right">
-                <a href="#">Login</a>
-                      |
-                <a href="#"><img src="images/vi.jpg" alt="VN"></a>
-            </div>
-        </div>
-    </div>
-    </header>
+    <?php include('header.php'); ?>
     <main>
-        
         <div class="container">
             <div class="row">
                 <div class="col-md-2 menu">
@@ -119,23 +104,7 @@
                     </div>
                 </div>
     </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 f-left">
-                    <h3>© 2019 - TRƯỜNG ĐẠI HỌC THỦY LỢI</h3>
-                </div>
-                
-                <div class="col-md-6 f-right">
-                    <h4>TRƯỜNG ĐẠI HỌC THỦY LỢI - CS1</h4>
-                    <p>Địa chỉ : 175 TÂY SƠN, ĐỐNG ĐA, HÀ NỘI.</p>
-                    <p>Điện thoại: (024) 3852 2201 - Fax: (024) 3563 3351</p>
-                    <p>Email: phonghcth@tlu.edu.vn</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <script src="js/bootstrap.min.js"></script>
-</body>
+    <?php include('footer.php'); ?>
+    </body>
 </html>
