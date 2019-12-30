@@ -8,7 +8,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form class="box" action="">
+    <form class="box" action="QL_diemdanh.php">
         <h1>Login</h1>
         <input type="text" name="user" placeholder="Username"/>
         <input type="password" name="password" placeholder="Password"/>
