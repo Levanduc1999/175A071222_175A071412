@@ -17,36 +17,33 @@ include('header.php');
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-9">
-                    <h1>Quản Lí Sinh Viên</h1>
-                    <table width=100% border="1">
+                    <h1>Quản Lí Giảng Viên</h1>
+                    <table with=100% border="1">
                     <tr>
-                        <th>Mã Sinh viên</th>
-                        <th>Tên Sinh viên</th>
-                        <th> Giới tính</th>
-                        <th>Quê Quán</th>
-                        <th>Mã lớp</th>
+                        <th>Mã Giáo viên</th>
+                        <th>Tên Giáo viên</th>
+                        <th> Trình Độ</th>
+                        <th>Mã Khoa</th>
                         <th>Xóa</th>
                         <th>Sửa</th>
                        
                     </tr>
                     <?php
-                        $sql="Select * From SINHVIEN";
+                        $sql="Select * From giaovien";
                         $result=mysqli_query($con,$sql);
                         if(mysqli_num_rows($result)>0){
                             while ($r=mysqli_fetch_assoc($result)) {
-                                $MaSV=$r['MaSV'];
-                                $TenSV=$r['TenSV'];
-                                $GioiTinh=$r['GioiTinh'];
-                                $QueQuan=$r['QueQuan'];
-                                $MaLop=$r['MaLop'];
+                                $MaGV=$r['MaGV'];
+                                $TenGV=$r['TenGV'];
+                                $TrinhDo=$r['TrinhDo'];
+                                $MaKhoa=$r['MaKhoa'];
                                 echo "<tr>";
-                                echo "<td>$MaSV</td>";
-                                echo "<td>$TenSV</td>";
-                                echo "<td> $GioiTinh</td>";
-                                echo "<td> $QueQuan</td>";
-                                echo "<td>$MaLop</td>"; 
-                                echo "<td><a href='delete_SV.php?id=$MaSV'><img src='images/deleted.gif' border='0'></a></td>";  
-                                echo "<td><a href='Update_SV.php?id=$MaSV'><img src='images/edit.gif' border='0'></a></td>";                                                             
+                                echo "<td>$MaGV</td>";
+                                echo "<td>$TenGV</td>";
+                                echo "<td> $TrinhDo</td>";
+                                echo "<td>$MaKhoa</td>"; 
+                                echo "<td><a href='delete_GV.php?id=$MaGV'><img src='images/deleted.gif' border='0'></a></td>";  
+                                echo "<td><a href='Update_GV.php?id=$MaGV'><img src='images/edit.gif' border='0'></a></td>";                                                             
                                 echo "</tr>";
                             }
                         }else{
@@ -54,8 +51,8 @@ include('header.php');
                         }
                     ?>
                     </table>
-                    <form action="Them_SV.php">
-                        <input type="submit" name="Them" value="Thêm"/>
+                    <form action="Them_GV.php">
+                        <input type="submit" nam="dangnhap" value="Thêm"/>
                     </form>
                 </div>
             </div>

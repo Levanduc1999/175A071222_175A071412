@@ -12,7 +12,7 @@
 <body>
 <header>
     <div class="container">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-6 logo">
                 <img src="images/logo.png" alt="logo">
             </div>

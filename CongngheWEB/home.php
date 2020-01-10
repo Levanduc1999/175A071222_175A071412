@@ -8,7 +8,7 @@
                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="home.php" role="tab" aria-controls="v-pills-home" aria-selected="true">Trang chủ</a>
                        
                     </div>
-                </div>
+                </div >
                 <div class="col-md-1"></div>
                 <div class="col-md-9">
                    <h2>Thông Báo</h2>
